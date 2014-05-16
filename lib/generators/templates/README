@@ -1,0 +1,24 @@
+
+===============================================================================
+
+Some setup you must do manually if you haven't yet:
+
+  1. Create tables
+
+       rake db:migrate
+
+  2. Download & Import data. (download site: http://www.ekidata.jp/)
+
+       rake jpstation:import FILE_DIR=/jpstation/path
+
+     Load Prefectures if prefecture data does not exist.
+
+       rake jpstation:prefecture
+
+  3. Customize models ( if need be )
+
+     Copy jpstation models to your Rails project if you want to customize.
+
+       rails generate jpstation:models
+
+===============================================================================
